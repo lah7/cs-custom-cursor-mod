@@ -12,7 +12,7 @@ namespace CustomCursor
 
         public string Description
         {
-            get { return "Use CustomPointer.png for the cursor pointer"; }
+            get { return "Use your own graphic as the mouse pointer"; }
         }
 
         public class CustomMouseEvent : MonoBehaviour {
@@ -33,7 +33,7 @@ namespace CustomCursor
                 UnityEngine.Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
             }
         }
-        
+
         public class Loader : LoadingExtensionBase
         {
             public override void OnLevelLoaded(LoadMode mode)
